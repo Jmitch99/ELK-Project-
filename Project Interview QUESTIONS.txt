@@ -1,0 +1,26 @@
+﻿DOMAIN:NETWORK SECURITY 
+
+
+-Suppose you have a firewall that's supposed to block SSH connections, but instead lets them through. How would you debug it?
+
+
+Question Restated:  It’s Important for an organization to verify and set firewall configurations. Especially because you don't want to allow unwanted, possibly malicious individuals to connect to your environment through SSH.  
+
+
+In Project 1, did you allow SSH traffic to all of the VMs on your network?
+Example Scenario: In my Cybersecurity Bootcamp we made a cloud environment through azure labs. When creating a rule in our NSG we made a rule with the highest 4096 priority to block ssh traffic other than our network, to prevent unwanted access to our environment (SSH). Only our Jumpbox is allowed to connect through SSH. If another machine attempts to connect it will just timeout. 
+
+
+If one of your Project 1 VMs accepted SSH connections, what would you assume the source of the error is?
+Solution Requirements: If one of the virtual machines accepted SSH connection I would immediately check firewall rules and configurations. I would double check the priority and all the options in the setting when creating the rule. Making sure it's set to ssh port 22 along with the port ranges and incoming traffic being allowed, destination and source is all correct. To test the configurations. Attempt to SSH into your VM from a network you know should not be allowed. If your attempt fails you know the rules are working correctly. 
+Identify Advantages and Disadvantages: With my cybersecurity bootcamp when we created a cloud environment within azure labs. Sometimes things could get complex when navigating and verifying correct configurations within a resource group. However machines and environments can easily be reconstructed and redeployed.
+
+
+
+
+Which specific panes in the Azure UI would you look at to investigate the problem?
+Explain Solution Details: When troubleshooting the Virtual Network, NSG and Resource Group. The Virtual Network should include your VM’s with their private IP’s starting with 10. In the NSG the proper rules should be in place with appropriate names stated as such, also it's important that the priorities are configured right so a rule doesn't get blocked out or is overwritten by a rule that should be less prioritized. These Virtual Networks and NSG should all be within the same Resource Group. 
+
+
+Identify Advantages/Disadvantages of the Solution:Does your solution guarantee that the Project 1 network is now "immune" to all unauthorized access?What monitoring controls might you add to ensure that you identify any suspicious authentication attempts?​
+In the IT world nothing is ever “immune” or 100% safe from anything. However, with appropriate configurations unauthorized access is definitely mitigated and up to pair with security protocols. Within our cloud environment by using Docker containers, File Beat, Metric Beat and YAML playbooks. We have downloaded and configured a GUI monitoring system Kibana and DVWA.
