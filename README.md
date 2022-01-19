@@ -104,4 +104,4 @@ SSH into the control node and follow the steps below:
 
 -ansible-playbook install-elk.yml
 
- -curl -L -O  - ![Exmaple Screenshot]https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
+ -curl -L -O  https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
