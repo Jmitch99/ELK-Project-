@@ -107,4 +107,4 @@ SSH into the control node and follow the steps below:
  -curl -L -O  https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
  
  
-  ![Exmaple Screenshot] (ELK-Project-/Diagram/Elkproject.png)
+  ![Exmaple Screenshot](/Diagram/Elkproject.png)
